@@ -13,8 +13,8 @@ from dagster import (
     execute_pipeline,
     pipeline,
 )
-from dagster.config import Enum as ConfigEnum
-from dagster.config.validate import validate_config
+from dagster._config import Enum as ConfigEnum
+from dagster._config.validate import validate_config
 from dagster.legacy import solid
 
 

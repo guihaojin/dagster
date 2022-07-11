@@ -29,10 +29,19 @@ from dagster import (
     pipeline,
 )
 from dagster._check import ParameterCheckError
+
+<<<<<<< HEAD
 from dagster.config.errors import DagsterEvaluationErrorReason
 from dagster.config.field_utils import Map, Shape, convert_potential_field
 from dagster.config.validate import process_config, validate_config
 from dagster.legacy import solid
+
+=======
+from dagster._config.errors import DagsterEvaluationErrorReason
+from dagster._config.field_utils import Map, Shape, convert_potential_field
+from dagster._config.validate import process_config, validate_config
+
+>>>>>>> e30123cc1b (mark dagster.{api,cli,config} private)
 
 
 def test_noop_config():

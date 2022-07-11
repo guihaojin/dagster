@@ -9,7 +9,7 @@ from dagster import (
     Permissive,
     StringSource,
 )
-from dagster.config.field import Field
+from dagster._config.field import Field
 from dagster.legacy import solid
 from dagster.utils.backcompat import experimental
 
