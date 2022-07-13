@@ -2,7 +2,7 @@ import pytest
 
 from dagster import Field, composite_solid
 from dagster._check import CheckError
-from dagster._config.config_type import ConfigAnyInstance
+from dagster._config import ConfigAnyInstance
 from dagster.legacy import solid
 
 
