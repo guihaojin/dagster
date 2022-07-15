@@ -2,7 +2,7 @@ import os
 import time
 
 from dagster import repository
-from dagster.legacy import solid
+from dagster._legacy import solid
 
 
 # start_loop_marker_0

@@ -11,7 +11,7 @@ from dagster import (
     repository,
     resource,
 )
-from dagster.legacy import solid
+from dagster._legacy import solid
 from dagster.utils import file_relative_path
 
 
