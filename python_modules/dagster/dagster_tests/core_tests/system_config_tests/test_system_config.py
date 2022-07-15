@@ -27,7 +27,6 @@ from dagster.core.definitions.run_config import (
 )
 from dagster.core.system_config.objects import ResolvedRunConfig, ResourceConfig, SolidConfig
 from dagster.legacy import solid
-from dagster._loggers import default_loggers
 
 
 def create_creation_data(pipeline_def):

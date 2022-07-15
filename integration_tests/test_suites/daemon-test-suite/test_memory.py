@@ -6,9 +6,9 @@ from contextlib import contextmanager
 import objgraph
 
 from dagster import RunRequest, pipeline, repository, schedule, sensor
+from dagster._daemon.controller import daemon_controller_from_instance
 from dagster.core.test_utils import instance_for_test
 from dagster.core.workspace.load_target import PythonFileTarget
-from dagster._daemon.controller import daemon_controller_from_instance
 from dagster.legacy import solid
 
 
