@@ -14,6 +14,7 @@ from dagster_test.test_project import get_test_project_workspace_and_external_pi
 
 from dagster import pipeline, reconstructable
 from dagster._check import CheckError
+from dagster._grpc.types import ExecuteRunArgs
 from dagster.core.host_representation import RepositoryHandle
 from dagster.core.launcher import LaunchRunContext
 from dagster.core.storage.tags import DOCKER_IMAGE_TAG
@@ -24,7 +25,6 @@ from dagster.core.test_utils import (
     instance_for_test,
 )
 from dagster.core.types.loadable_target_origin import LoadableTargetOrigin
-from dagster._grpc.types import ExecuteRunArgs
 from dagster.utils import merge_dicts
 from dagster.utils.hosted_user_process import external_pipeline_from_recon_pipeline
 

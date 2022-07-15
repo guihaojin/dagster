@@ -19,6 +19,7 @@ from dagster import (
     pipeline,
 )
 from dagster._config import ConfigTypeKind, process_config
+from dagster._loggers import default_loggers
 from dagster.core.definitions import create_run_config_schema
 from dagster.core.definitions.run_config import (
     RunConfigSchemaCreationData,
