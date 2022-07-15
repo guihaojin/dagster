@@ -2,6 +2,7 @@ import os
 import time
 from contextlib import contextmanager
 
+import pytest
 from dagster_test.test_project import (
     ReOriginatedExternalPipelineForTest,
     find_local_test_image,
@@ -71,6 +72,8 @@ def test_monitoring():
             assert all_daemons_healthy(instance)
 
 
+@pytest.skip("Disabling due to timeouts")
+# https://github.com/dagster-io/dagster/issues/8905
 def test_docker_monitoring():
     docker_image = get_test_project_docker_image()
 
