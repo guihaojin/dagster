@@ -21,7 +21,7 @@ from dagster.core.execution.plan.step import StepKind
 from dagster.core.system_config.objects import ResolvedRunConfig
 from dagster.core.types.dagster_type import create_any_type
 from dagster.legacy import solid
-from dagster.utils.test import get_temp_file_name, get_temp_file_names
+from dagster._utils.test import get_temp_file_name, get_temp_file_names
 
 
 def single_int_output_pipeline():

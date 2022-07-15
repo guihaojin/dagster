@@ -9,7 +9,7 @@ from dagster import (
     resource,
 )
 from dagster.legacy import solid
-from dagster.utils import merge_dicts
+from dagster._utils import merge_dicts
 
 
 def define_resource(num):

@@ -12,7 +12,7 @@ from dagster.core.execution.api import create_execution_plan
 from dagster.core.snap import snapshot_from_execution_plan
 from dagster.core.test_utils import default_mode_def_for_test, instance_for_test
 from dagster.legacy import solid
-from dagster.utils import file_relative_path
+from dagster._utils import file_relative_path
 
 
 @solid

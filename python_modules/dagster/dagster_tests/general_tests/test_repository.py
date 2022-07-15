@@ -12,7 +12,7 @@ from dagster import (
     resource,
 )
 from dagster.legacy import solid
-from dagster.utils import file_relative_path
+from dagster._utils import file_relative_path
 
 
 def define_empty_pipeline():

@@ -23,7 +23,7 @@ from dagster.core.instance import DagsterInstance
 from dagster.core.storage.compute_log_manager import ComputeIOType
 from dagster.core.test_utils import create_run_for_test, instance_for_test
 from dagster.legacy import solid
-from dagster.utils import ensure_dir, touch_file
+from dagster._utils import ensure_dir, touch_file
 
 HELLO_SOLID = "HELLO SOLID"
 HELLO_RESOURCE = "HELLO RESOURCE"

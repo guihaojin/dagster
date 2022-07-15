@@ -20,7 +20,7 @@ from dagster import (
     usable_as_dagster_type,
 )
 from dagster.legacy import solid
-from dagster.utils import safe_tempfile_path
+from dagster._utils import safe_tempfile_path
 
 
 def test_basic_even_type():

@@ -10,7 +10,7 @@ from dagster.core.test_utils import instance_for_test, poll_for_finished_run, po
 from dagster.core.workspace import WorkspaceProcessContext
 from dagster.core.workspace.load_target import PythonFileTarget
 from dagster.legacy import solid
-from dagster.utils import file_relative_path
+from dagster._utils import file_relative_path
 
 
 @solid

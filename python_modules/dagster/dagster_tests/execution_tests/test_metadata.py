@@ -31,7 +31,7 @@ from dagster.core.definitions.metadata.table import (
     TableSchema,
 )
 from dagster.legacy import solid
-from dagster.utils import frozendict
+from dagster._utils import frozendict
 
 
 def solid_events_for_type(result, solid_name, event_type):
