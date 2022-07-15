@@ -16,7 +16,7 @@ from dagster import (
     fs_io_manager,
     pipeline,
     repository,
-    seven,
+    _seven,
 )
 from dagster._grpc.client import DagsterGrpcClient
 from dagster._grpc.server import GrpcServerProcess
@@ -296,7 +296,7 @@ def test_invalid_instance_run(get_workspace):
     run_configs(),
 )
 @pytest.mark.skipif(
-    seven.IS_WINDOWS,
+    _seven.IS_WINDOWS,
     reason="Crashy pipelines leave resources open on windows, causing filesystem contention",
 )
 def test_crashy_run(get_workspace, run_config):  # pylint: disable=redefined-outer-name
@@ -347,7 +347,7 @@ def test_crashy_run(get_workspace, run_config):  # pylint: disable=redefined-out
 
 @pytest.mark.parametrize("run_config", run_configs())
 @pytest.mark.skipif(
-    seven.IS_WINDOWS,
+    _seven.IS_WINDOWS,
     reason="Crashy pipelines leave resources open on windows, causing filesystem contention",
 )
 def test_exity_run(run_config):  # pylint: disable=redefined-outer-name

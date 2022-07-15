@@ -2,7 +2,7 @@ from dagster import InputDefinition, OutputDefinition, composite_solid, pipeline
 from dagster.core.execution.api import create_execution_plan
 from dagster.core.snap import create_pipeline_snapshot_id, snapshot_from_execution_plan
 from dagster.legacy import solid
-from dagster.serdes import serialize_pp
+from dagster._serdes import serialize_pp
 
 
 def test_create_noop_execution_plan(snapshot):

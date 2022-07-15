@@ -6,7 +6,7 @@ from dagster.core.host_representation import (
     external_repository_data_from_def,
 )
 from dagster.legacy import solid
-from dagster.serdes import serialize_pp
+from dagster._serdes import serialize_pp
 
 
 @solid

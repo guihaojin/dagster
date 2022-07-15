@@ -18,7 +18,7 @@ from dagster.core.snap import (
     snap_from_config_type,
 )
 from dagster.legacy import solid
-from dagster.serdes import (
+from dagster._serdes import (
     deserialize_json_to_dagster_namedtuple,
     deserialize_value,
     serialize_dagster_namedtuple,

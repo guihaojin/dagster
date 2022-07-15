@@ -27,7 +27,7 @@ from dagster.core.snap.dep_snapshot import (
     build_dep_structure_snapshot_from_icontains_solids,
 )
 from dagster.legacy import solid
-from dagster.serdes import (
+from dagster._serdes import (
     deserialize_json_to_dagster_namedtuple,
     serialize_dagster_namedtuple,
     serialize_pp,

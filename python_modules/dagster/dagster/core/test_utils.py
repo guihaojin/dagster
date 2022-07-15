@@ -29,8 +29,8 @@ from dagster.core.storage.pipeline_run import PipelineRun, PipelineRunStatus, Ru
 from dagster.core.workspace.context import WorkspaceProcessContext
 from dagster.core.workspace.load_target import WorkspaceLoadTarget
 from dagster.legacy import solid
-from dagster.serdes import ConfigurableClass
-from dagster.seven.compat.pendulum import create_pendulum_time, mock_pendulum_timezone
+from dagster._serdes import ConfigurableClass
+from dagster._seven.compat.pendulum import create_pendulum_time, mock_pendulum_timezone
 from dagster.utils import Counter, merge_dicts, traced, traced_counter
 from dagster.utils.error import serializable_error_info_from_exc_info
 from dagster.utils.log import configure_loggers
