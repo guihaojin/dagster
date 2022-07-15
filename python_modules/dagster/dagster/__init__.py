@@ -34,6 +34,7 @@ from dagster.core.definitions import (
     ConfigMapping,
     DagsterAssetMetadataValue,
     DagsterPipelineRunMetadataValue,
+    DagsterRunMetadataValue,
     DailyPartitionsDefinition,
     DefaultScheduleStatus,
     DefaultSensorStatus,
@@ -311,9 +312,6 @@ if typing.TYPE_CHECKING:
     # pylint:disable=reimported
     from dagster.core.definitions import AssetGroup
     from dagster.core.definitions import DagsterAssetMetadataValue as DagsterAssetMetadataEntryData
-    from dagster.core.definitions import (
-        DagsterPipelineRunMetadataValue as DagsterPipelineRunMetadataEntryData,
-    )
     from dagster.core.definitions import FloatMetadataValue as FloatMetadataEntryData
     from dagster.core.definitions import IntMetadataValue as IntMetadataEntryData
     from dagster.core.definitions import JsonMetadataValue as JsonMetadataEntryData
@@ -353,10 +351,6 @@ _DEPRECATED_RENAMED = {
     ),
     "FloatMetadataEntryData": (FloatMetadataValue, "0.16.0"),
     "IntMetadataEntryData": (IntMetadataValue, "0.16.0"),
-    "DagsterPipelineRunMetadataEntryData": (
-        DagsterPipelineRunMetadataValue,
-        "0.16.0",
-    ),
     "DagsterAssetMetadataEntryData": (
         DagsterAssetMetadataValue,
         "0.16.0",
@@ -409,6 +403,7 @@ __all__ = [
     "AssetsDefinition",
     "DagsterAssetMetadataValue",
     "DagsterPipelineRunMetadataValue",
+    "DagsterRunMetadataValue",
     "TableColumn",
     "TableColumnConstraints",
     "TableConstraints",
