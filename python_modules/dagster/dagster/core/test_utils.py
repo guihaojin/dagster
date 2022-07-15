@@ -14,14 +14,8 @@ import yaml
 
 from dagster import ModeDefinition, Shape
 from dagster import _check as check
-<<<<<<< HEAD
 from dagster import composite_solid, fs_io_manager, pipeline
-from dagster._config import Field
-from dagster._config.config_type import Array
-=======
-from dagster import composite_solid, fs_io_manager, pipeline, solid
 from dagster._config import Array, Field
->>>>>>> 22ad048cd5 (normalize config interface)
 from dagster.core.host_representation.origin import (
     ExternalPipelineOrigin,
     InProcessRepositoryLocationOrigin,
