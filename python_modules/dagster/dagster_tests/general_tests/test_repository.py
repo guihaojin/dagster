@@ -11,8 +11,8 @@ from dagster import (
     repository,
     resource,
 )
-from dagster.legacy import solid
 from dagster._utils import file_relative_path
+from dagster.legacy import solid
 
 
 def define_empty_pipeline():

@@ -31,6 +31,7 @@ from dagster._cli.job import job_execute_command
 from dagster._cli.pipeline import pipeline_execute_command
 from dagster._cli.run import run_delete_command, run_list_command, run_wipe_command
 from dagster._grpc.server import GrpcServerProcess
+from dagster._utils import file_relative_path, merge_dicts
 from dagster.core.definitions.decorators.sensor_decorator import sensor
 from dagster.core.definitions.partition import PartitionedConfig, StaticPartitionsDefinition
 from dagster.core.definitions.sensor_definition import RunRequest
@@ -39,7 +40,6 @@ from dagster.core.storage.tags import MEMOIZED_RUN_TAG
 from dagster.core.test_utils import instance_for_test
 from dagster.core.types.loadable_target_origin import LoadableTargetOrigin
 from dagster.legacy import solid
-from dagster._utils import file_relative_path, merge_dicts
 from dagster.version import __version__
 
 

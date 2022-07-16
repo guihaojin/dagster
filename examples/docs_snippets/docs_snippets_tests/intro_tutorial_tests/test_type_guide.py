@@ -19,8 +19,8 @@ from dagster import (
     pipeline,
     usable_as_dagster_type,
 )
-from dagster.legacy import solid
 from dagster._utils import safe_tempfile_path
+from dagster.legacy import solid
 
 
 def test_basic_even_type():

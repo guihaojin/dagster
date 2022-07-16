@@ -36,11 +36,11 @@ from dagster import (
     repository,
     resource,
 )
+from dagster._utils import merge_dicts, segfault
+from dagster._utils.yaml_utils import merge_yamls
 from dagster.core.definitions.decorators import daily_schedule, schedule
 from dagster.core.test_utils import nesting_composite_pipeline
 from dagster.legacy import solid
-from dagster._utils import merge_dicts, segfault
-from dagster._utils.yaml_utils import merge_yamls
 
 IS_BUILDKITE = bool(os.getenv("BUILDKITE"))
 

@@ -13,8 +13,8 @@ from dagster import (
 )
 from dagster import _check as check
 from dagster import execute_pipeline, lambda_solid, pipeline
-from dagster.legacy import solid
 from dagster._utils import file_relative_path
+from dagster.legacy import solid
 
 
 def test_presets():

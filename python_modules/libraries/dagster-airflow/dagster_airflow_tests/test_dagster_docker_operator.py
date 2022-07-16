@@ -7,12 +7,12 @@ from dagster_airflow.operators.docker_operator import DagsterDockerOperator
 from dagster_airflow_tests.marks import requires_airflow_db
 
 from dagster import pipeline, repository
+from dagster._utils import file_relative_path
 from dagster.core.definitions.reconstruct import ReconstructableRepository
 from dagster.core.execution.api import create_execution_plan
 from dagster.core.snap import snapshot_from_execution_plan
 from dagster.core.test_utils import default_mode_def_for_test, instance_for_test
 from dagster.legacy import solid
-from dagster._utils import file_relative_path
 
 
 @solid

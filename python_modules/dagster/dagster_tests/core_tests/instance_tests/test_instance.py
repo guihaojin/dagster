@@ -9,6 +9,8 @@ from dagster import _check as check
 from dagster import execute_pipeline, pipeline
 from dagster._check import CheckError
 from dagster._config import Field
+from dagster._serdes import ConfigurableClass
+from dagster._serdes.config_class import ConfigurableClassData
 from dagster.core.errors import (
     DagsterHomeNotSetError,
     DagsterInvalidConfigError,
@@ -26,8 +28,6 @@ from dagster.core.snap import (
 )
 from dagster.core.test_utils import create_run_for_test, environ, instance_for_test
 from dagster.legacy import solid
-from dagster._serdes import ConfigurableClass
-from dagster._serdes.config_class import ConfigurableClassData
 
 
 def test_get_run_by_id():

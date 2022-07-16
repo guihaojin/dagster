@@ -3,11 +3,11 @@ import tempfile
 from contextlib import contextmanager
 
 from dagster import LocalFileHandle, ModeDefinition, execute_pipeline, pipeline
+from dagster._utils.temp_file import get_temp_file_handle_with_data
 from dagster.core.instance import DagsterInstance
 from dagster.core.storage.file_manager import LocalFileManager, local_file_manager
 from dagster.core.test_utils import instance_for_test
 from dagster.legacy import solid
-from dagster._utils.temp_file import get_temp_file_handle_with_data
 
 
 @contextmanager

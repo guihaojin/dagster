@@ -3,9 +3,9 @@ from click.testing import CliRunner
 
 from dagster import AssetKey, AssetMaterialization, Output, execute_pipeline, pipeline
 from dagster._cli.asset import asset_wipe_command
+from dagster._seven import json
 from dagster.core.instance import DagsterInstance
 from dagster.legacy import solid
-from dagster._seven import json
 
 
 @pytest.fixture(name="asset_instance")

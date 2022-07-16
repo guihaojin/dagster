@@ -10,8 +10,8 @@ from dagster import (
     StringSource,
 )
 from dagster._config.field import Field
-from dagster.legacy import solid
 from dagster._utils.backcompat import experimental
+from dagster.legacy import solid
 
 from ..utils import generate_materializations
 from .constants import (

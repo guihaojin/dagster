@@ -8,8 +8,8 @@ from dagster import (
     reconstructable,
     resource,
 )
-from dagster.legacy import solid
 from dagster._utils import merge_dicts
+from dagster.legacy import solid
 
 
 def define_resource(num):

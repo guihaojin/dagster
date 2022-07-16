@@ -22,9 +22,9 @@ from dagster import (
     repository,
     resource,
 )
+from dagster._utils import PICKLE_PROTOCOL, file_relative_path
 from dagster.core.storage.file_manager import local_file_manager
 from dagster.legacy import solid
-from dagster._utils import PICKLE_PROTOCOL, file_relative_path
 
 try:
     from dagster_pandas import DataFrame

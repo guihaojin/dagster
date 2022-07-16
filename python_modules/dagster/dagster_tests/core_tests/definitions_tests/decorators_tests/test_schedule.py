@@ -22,7 +22,6 @@ from dagster import (
     validate_run_config,
     weekly_schedule,
 )
-from dagster.legacy import solid
 from dagster._seven.compat.pendulum import create_pendulum_time, to_timezone
 from dagster._utils import merge_dicts
 from dagster._utils.partitions import (
@@ -31,6 +30,7 @@ from dagster._utils.partitions import (
     DEFAULT_HOURLY_FORMAT_WITH_TIMEZONE,
     DEFAULT_MONTHLY_FORMAT,
 )
+from dagster.legacy import solid
 
 # This file tests a lot of parameter name stuff, so these warnings are spurious
 # pylint: disable=unused-variable, unused-argument, redefined-outer-name

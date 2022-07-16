@@ -8,14 +8,14 @@ from dagstermill.io_managers import local_output_notebook_io_manager
 from dagster import (
     ModeDefinition,
     String,
+    _seven,
     execute_pipeline,
     logger,
     pipeline,
     reconstructable,
-    _seven,
 )
-from dagster.core.test_utils import instance_for_test
 from dagster._utils import safe_tempfile_path
+from dagster.core.test_utils import instance_for_test
 
 
 class LogTestFileHandler(logging.Handler):

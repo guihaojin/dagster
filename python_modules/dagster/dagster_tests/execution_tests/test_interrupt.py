@@ -13,6 +13,7 @@ from dagster import (
     ModeDefinition,
     RetryPolicy,
     String,
+    _seven,
     execute_pipeline,
     execute_pipeline_iterator,
     job,
@@ -20,13 +21,12 @@ from dagster import (
     pipeline,
     reconstructable,
     resource,
-    _seven,
 )
+from dagster._utils import safe_tempfile_path, send_interrupt
+from dagster._utils.interrupts import capture_interrupts, check_captured_interrupt
 from dagster.core.errors import DagsterExecutionInterruptedError, raise_execution_interrupts
 from dagster.core.test_utils import default_mode_def_for_test, instance_for_test
 from dagster.legacy import solid
-from dagster._utils import safe_tempfile_path, send_interrupt
-from dagster._utils.interrupts import capture_interrupts, check_captured_interrupt
 
 
 def _send_kbd_int(temp_files):
